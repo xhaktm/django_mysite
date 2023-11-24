@@ -5,5 +5,7 @@
     {% for image in image_list %}
       <li><a href="{% url 'gallery:image_detail' image.id %}">{{image}}</a></li>
     {% endfor %}
+
+    <p><a href="{% url 'gallery:image_add' %}">[New Image]</a></p>
   </body>
 </html>
